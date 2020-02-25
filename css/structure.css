@@ -192,23 +192,23 @@ p {
 @media (max-width: 600px) {
 .centravimas {
     display: inline-block;
-    width: 375px;
-    margin-left: calc( (100% - 375px) / 2 );}
+    width: 300px;
+    margin-left: calc( (100% - 300px) / 2 );}
     .buttons {
         margin-left: calc(50% - 100px); 
         margin-top: 20px;
         }
         .kaire {
-            width: 375px;
-            margin-left: calc( (100% - 375px) / 2 );}
+            width: 300px;
+            margin-left: calc( (100% - 300px) / 2 );}
     
         .desine {
-            width: 375px;
-            margin-left: calc( (100% - 375px) / 2 );}
+            width: 300px;
+            margin-left: calc( (100% - 300px) / 2 );}
         .floatai > div {
             float: none; 
-            margin-left: calc( (100% - 375px) / 2 );
-            width: 375px;
+            margin-left: calc( (100% - 300px) / 2 );
+            width: 300px;
             
             }
             .floatai >  :first-child {
