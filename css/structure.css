@@ -1,5 +1,5 @@
 body {
-    
+    width: 100vw;
 }
 .visas > *  {
     width: 100vw;
@@ -118,13 +118,37 @@ p {
         height: auto;
         margin-top: 50px;
     }
+    .floatai {
+        display: inline-block;
+        width: 100%;
+       
+        
+        
+    }
+    .floatai > div {
+        float: left; 
+        padding: 20px;
+        width: 33%;
+        text-align: center;
+    }
+    .floatai >  :first-child {
+        padding-left: 80px; }
+    
+        .floatai > :last-child {
+            padding-right: 80px;
+        }
+    .floatai > div > img {
+        width: 80px;
+        margin-bottom: 20px;
+    }
 
+    .floatai > div > h1 {
+        margin-bottom: 10px;
+    }
+    
 
-.pirmasgrid {
-    display: grid;
-    grid-template-columns: 1 fr 1 fr 1fr;
-    grid-template-rows: max-content;
-}
+       
+    
 
 
 
@@ -181,4 +205,17 @@ p {
         .desine {
             width: 375px;
             margin-left: calc( (100% - 375px) / 2 );}
-}
+        .floatai > div {
+            float: none; 
+            margin-left: calc( (100% - 375px) / 2 );
+            width: 375px;
+            
+            }
+            .floatai >  :first-child {
+                padding-left: 20px; }
+            
+                .floatai > :last-child {
+                    padding-right: 20px; }
+            
+            
+            }
