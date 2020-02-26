@@ -145,26 +145,89 @@ p {
     .floatai > div > h1 {
         margin-bottom: 10px;
     }
+
+    .marginlog {
+        display: inline-block;
+        width: 90%;
+        margin: 50px 5% 100px; 
+        text-align: center;
+        justify-items: center;
+        
+
+    }
+.logai {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
+    
+}
+.logai > img {
+    width: 80%;
+    padding: 30px;
+    margin: auto 0;  
+}
     
 
+ footer {
+     display: inline-block;
+     position: relative;
+     width: 100%;
+     margin-top: 100px;
+     padding: 30px ;
+     background-color: #ddd; 
+ }   
+    footer > img {
+        width: 80px;
+        float: left;
+        margin: 30px;
+        
+    }
+    footer > .footernav  {
+        display: inline-block;
+        width: 60%;
+        margin-top: 40px;
+        
+        
+        
+
+
+    }
+    footer > .footernav > a{
+        display: inline-block;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+        width: 180px;
+        padding: 10px 0;
+        text-decoration: none;
+        color: black;
+        
+
+    }
+    footer .social {
+        float: right;
+        margin-right: 100px;
+        
+    }
+    .social > a > img {
+        width: 40px;
+        pa
        
+    }
     
 
 
 
 
 
-
-@media (max-width: 1100px) {
+@media (max-width: 1100px ) {
     .centravimas {
         display: inline-block;
         width: 800px;
-        margin-left: calc( 50% - 400px);   
+        margin-left: calc( 50% - 400px);
 }
-.kaire {
+  .kaire {
     float: left;
-    width: 60%;
-    
+    width: 60%;  
 }
 }
 
@@ -184,6 +247,11 @@ p {
             float: none;
             width: 600px;
             margin-left: calc( 50% - 300px);} 
+            .logai > img {
+                width: 60%;
+                margin: auto 20%;
+                
+            }
     }
 
 
@@ -216,6 +284,11 @@ p {
             
                 .floatai > :last-child {
                     padding-right: 20px; }
+                    .logai > img {
+                        width: 60%;
+                        margin: auto 20%;
+                        
+                    }
             
             
             }
