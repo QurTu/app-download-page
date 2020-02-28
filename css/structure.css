@@ -5,7 +5,6 @@ body {
     width: 100vw;
     margin-bottom: 50px;
 }
-
 .centravimas {
     display: inline-block;
     width: 1000px;
@@ -13,10 +12,11 @@ body {
     
 }
 
+/* HEADER */
+
 header {
     display: inline-block;
     width: 100%;
-   
     margin-top: 50px;
     }
     header > img {
@@ -33,14 +33,9 @@ header {
         padding-bottom: 20px;
         text-align: center;
     }
-   
-    
     .buttons {
         display: inline-block;
-        width: 100%;
-        margin-left: calc(50% - 200px);
-        
-        
+        margin-left: calc(50% - 200px);  
     }
       .buttons > a {
         display: inline-block;
@@ -54,9 +49,12 @@ header {
         border-radius: 20px;
         width: 200px;
         text-align: center;
-        margin-top: 30px;
-        
+        margin-top: 30px;  
     }
+    .buttons > a:last-of-type {
+        background-color: blue;
+    }
+
 p {
     display: inline-block;
     width: 100%;
@@ -74,6 +72,8 @@ p {
     padding-bottom: 20px;
 }
 
+/* HERO */
+
 .antraspsl {
     display: inline-block;
     width: 100%;
@@ -87,43 +87,35 @@ p {
         margin-left: 50px;
         
     }
-    .desine > div > h1 {
-        display: inline-block;
-        width: 100%;
-        font-size: 25px;
-        line-height: 30px;
-        padding-bottom: 5px; 
-    }
+        .desine > div > h1 {
+            display: inline-block;
+            width: 100%;
+            font-size: 25px;
+            line-height: 30px;
+            padding-bottom: 5px; 
+        }
 
-    .desine > div > p {
-        padding-bottom: 40px; 
-         text-align: start;
-    }
-        
-    
-
+        .desine > div > p {
+            padding-bottom: 40px; 
+            text-align: start;
+        }
     .kaire {
         float: left;
-        width: 50%;
-        
-        
+        width: 50%;   
     }
-    .kaire > img {
-        width: 90%;
-        height: auto;
-    }
+        .kaire > img {
+            width: 90%;
+            height: auto;
+        }
+        .sunuotrauka > img {
+            width: 100%;
+            height: auto;
+            margin-top: 50px;
 
-    .sunuotrauka > img {
-        width: 100%;
-        height: auto;
-        margin-top: 50px;
     }
     .floatai {
         display: inline-block;
-        width: 100%;
-       
-        
-        
+        width: 100%; 
     }
     .floatai > div {
         float: left; 
@@ -165,54 +157,70 @@ p {
     padding: 30px;
     margin: auto 0;  
 }
+/* FOOTER */
     
 
  footer {
      display: inline-block;
-     position: relative;
      width: 100%;
      margin-top: 100px;
      padding: 30px ;
      background-color: #ddd; 
+     
  }   
-    footer > img {
-        width: 80px;
-        float: left;
-        margin: 30px;
-        
+    .flexas {
+        display: flex;
+        width: 90%;
+        align-items: center;
     }
-    footer > .footernav  {
+
+    
+    .logodiv {
         display: inline-block;
-        width: 60%;
-        margin-top: 40px;
-        
-        
-        
-
 
     }
-    footer > .footernav > a{
-        display: inline-block;
-        text-align: center;
-        font-size: 16px;
-        line-height: 20px;
-        width: 180px;
-        padding: 10px 0;
-        text-decoration: none;
-        color: black;
-        
 
-    }
-    footer .social {
-        float: right;
-        margin-right: 100px;
+        footer > .flexas > img {
+            height: 80px;
+            margin: 30px;
+            
+        }
+        footer > .flexas > .footernav  {
+            display: inline-block;
+            width: 60%;
+            margin-left: 50px;
+            flex-shrink: 1;
+            
+            
+
+        }
+        footer > .flexas > .footernav > a{
+            display: inline-block;
+            
+            font-size: 16px;
+            line-height: 20px;
+            width: 150px;
+            padding: 10px 0;
+            text-decoration: none;
+            color: black;
+            
+            
+
+        }
+        .social {
+            width:200px;
+            justify-content: end;
+            
+        }
+        .social > a {
+            width: 200px;
+            margin-right: 10px; 
+        }
+        .social > a > img {
+            width: 25%;
+           
+        }
         
-    }
-    .social > a > img {
-        width: 40px;
-        pa
-       
-    }
     
 
 
@@ -235,26 +243,25 @@ p {
     .centravimas {
         display: inline-block;
         width: 600px;
-        margin-left: calc( 50% - 300px);} 
+        margin-left: calc( 50% - 300px);
+    } 
         .kaire {
             float: none;
             display: block;
             width: 600px;
-            margin-left: calc( 50% - 300px);} 
-            
-        
+            margin-left: calc( 50% - 300px);
+        } 
         .desine {
             float: none;
             width: 600px;
-            margin-left: calc( 50% - 300px);} 
+            margin-left: calc( 50% - 300px);
+        } 
             .logai > img {
                 width: 60%;
                 margin: auto 20%;
                 
             }
     }
-
-
 
 
 @media (max-width: 600px) {
@@ -289,6 +296,12 @@ p {
                         margin: auto 20%;
                         
                     }
-            
+                    .flexas { 
+                        flex-direction: column;
+                    }
+                    footer > .flexas > .footernav {
+                        text-align: center;
+                        margin: 30px 0;
+                    }
             
             }
