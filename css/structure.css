@@ -115,7 +115,7 @@ p {
     }
     .floatai {
         display: inline-block;
-        width: 100%; 
+        
     }
     .floatai > div {
         float: left; 
